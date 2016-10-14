@@ -6,8 +6,8 @@ class Game extends Phaser.Game {
 	constructor() {
 		super(500, 500, Phaser.AUTO, 'content', null);
 		this.state.add('Asteroids', Asteroids, false);
-		this.state.add('Preload', Preload, false);
-		this.state.start('Preload');
+		this.state.add('PreloadState', PreloadState, false);
+		this.state.start('PreloadState');
 	}
 
 }
